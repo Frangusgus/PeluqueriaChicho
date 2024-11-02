@@ -1,0 +1,92 @@
+header
+{
+    background-color: rgb(118, 117, 185);
+    text-align: center;
+    position: relative;
+    padding: 1em 0;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+}
+
+body {
+    background-color: rgb(194, 188, 247);
+    font-family: 'Merriweather', serif;
+}
+
+button {
+    background-color: beige;
+}
+
+.iconos {
+    font-size: 2em;
+
+}
+
+footer {
+    background-color: rgb(118, 117, 185);
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 200px;
+}
+
+.box1 {
+    width: 30%;
+    height: 300px;
+}
+
+.box2 {
+    width: 30%;
+    height: 300px;
+}
+
+.box3 {
+    width: 30%;
+    height: 300px;
+
+}
+
+
+.video {
+    display:flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat (2, 1fr);
+    gap: 5px;
+    text-align: center;
+}
+
+.grid-item {
+    background-color: antiquewhite;
+}
+
+@media only screen and (min-width: 1200px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-columns: 1fr;
+        gap: 5px;
+        text-align: center;
+    }
+  }
