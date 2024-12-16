@@ -2,16 +2,41 @@ let servicios = [];
 let total = 0;
 
 function agregarServicio(servicio, precio) {
-    let carrito = document.getElementById("carrito");
-    let servicioItem = document.createElement("p");
-    servicioItem.textContent = servicio;
-    carrito.appendChild(servicioItem);
 
-    servicios.push({ nombre: servicio, precio: precio });
+  
 
-    total+= precio;
-    document.getElementById("btnPagar").textContent = `Pagar: $${total}`;
-}
+    const existente = servicios.some(servicioItem => servicioItem.id === servicio.id);
+
+       
+
+        
+
+
+
+    if (existente) {
+        alert(`Ya añadiste "${servicio.name}".`);
+        return false;
+
+    }
+
+        else {
+            let carrito = document.getElementById("carrito")
+            let servicioItem = document.createElement("p");
+            servicioItem.textContent = servicio.name;
+            carrito.appendChild(servicioItem);
+            servicios.push({id: servicio.id, name: servicio.name, precio: precio });
+            alert(`Añadiste "${servicio.name}" exitosamente.`);
+
+            total+= precio;
+            document.getElementById("btnPagar").textContent = `Pagar: $${total}`;
+                }
+        }
+    
+    
+
+
+
+
 
 function pagar() {
  

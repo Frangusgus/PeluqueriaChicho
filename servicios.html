@@ -43,90 +43,90 @@
                 <section>
                     <div class="container-sm"> 
                         <div class="row">
-                            <div class="col-sm-3">
+                            <div class="col-sm-3" data-id="1" data-name="Pelo" data-price="8000">
                               <div class="card text-white bg-dark mb-3">
                                 <img class="card-img-top" src="img/corte.jpg" alt="señor siendo cortado el cabello">
                                 <div class="card-body">
                                   <h3 class="card-title">Corte de pelo</h3>
                                   <h2>$8000</h2>
-                                  <button id="btnComprar" type="button" class="btn btn-primary" onclick="agregarServicio('Corte de Pelo', 8000)">Agregar</button>
+                                  <button id="btnComprar" type="button" class="btn btn-primary" onclick="agregarServicio({ id: 1, name: 'Corte de Pelo' }, 8000)">Agregar</button>
                                 </div>
                               </div>
                             </div>
 
-                                <div class="col-sm-3">
+                                <div class="col-sm-3" data-id="2" data-name="Barba" data-price="7000">
                                   <div class="card text-white bg-dark mb-3">
                                     <img class="card-img-top" src="img/barba.jpg" alt="señor teniendo un corte de barba">
                                     <div class="card-body">
                                       <h3 class="card-title">Corte de barba</h3>
                                       <h2>$7000</h2>
-                                      <button id="btnComprar" type="button" class="btn btn-primary" onclick="agregarServicio('Corte de Barba', 7000)">Agregar</button>
+                                      <button id="btnComprar" type="button" class="btn btn-primary" onclick="agregarServicio({ id: 2, name: 'Corte de  Barba' }, 7000)">Agregar</button>
                                     </div>
                                   </div>
                                 </div>
 
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-3" data-id="3" data-name="Color" data-price="5500">
                                       <div class="card text-white bg-dark mb-3">
                                         <img class="card-img-top" src="img/herramientas.jpg" alt="herramientas de peluquería">
                                         <div class="card-body">
                                           <h3 class="card-title">Color</h3>
                                           <h2>$5500</h2>
-                                          <button id="btnComprar" type="button" class="btn btn-primary" onclick="agregarServicio('Color', 5500)">Agregar</button>
+                                          <button id="btnComprar" type="button" class="btn btn-primary" onclick="agregarServicio({ id: 3, name: 'Color' }, 5500)">Agregar</button>
                                         </div>
                                       </div>
                                     </div>
 
-                                        <div class="col-sm-3">
+                                        <div class="col-sm-3" data-id="4" data-name="Keratina" data-price="9500">
                                           <div class="card text-white bg-dark mb-3">
                                             <img class="card-img-top" src="img/mujer.jpg" alt="mujer en peluquería">
                                             <div class="card-body">
                                               <h3 class="card-title">Shock de Keratina</h3>
                                               <h2>$9500</h2>
-                                              <button id="btnComprar" type="button" class="btn btn-primary" onclick="agregarServicio('Shock de Keratina', 9500)">Agregar</button>
+                                              <button id="btnComprar" type="button" class="btn btn-primary" onclick="agregarServicio({ id: 4, name: 'Shock de Keratina' }, 9500)">Agregar</button>
                                             </div>
                                           </div>
                                         </div>
 
-                                            <div class="col-sm-3">
+                                            <div class="col-sm-3" data-id="5" data-name="Cejas" data-price="9000">
                                               <div class="card text-white bg-dark mb-3">
                                                 <img class="card-img-top" src="img/cejas.jpg" alt="cejas de una persona siendo perfiladas">
                                                 <div class="card-body">
                                                   <h3 class="card-title">Perfilado de Cejas</h3>
                                                   <h2>$9000</h2>
-                                                  <button id="btnComprar" type="button" class="btn btn-primary" onclick="agregarServicio('Perfilado de Cejas', 9000)">Agregar</button>
+                                                  <button id="btnComprar" type="button" class="btn btn-primary" onclick="agregarServicio({ id: 5, name: 'Perfilado de Cejas' }, 9000)">Agregar</button>
                                                 </div>
                                               </div>
                                             </div>
 
-                                                <div class="col-sm-3">
+                                                <div class="col-sm-3" data-id="6" data-name="Lavado" data-price="5000">
                                                   <div class="card text-white bg-dark mb-3">
                                                     <img class="card-img-top" src="img/lavado.jpg" alt="mujer en peluquería teniendo el pelo secado después de un lavado">
                                                     <div class="card-body">
                                                       <h3 class="card-title">Lavado de Pelo</h3>
                                                       <h2>$5000</h2>
-                                                      <button id="btnComprar" type="button" class="btn btn-primary" onclick="agregarServicio('Lavado de Pelo', 5000)">Agregar</button>
+                                                      <button id="btnComprar" type="button" class="btn btn-primary" onclick="agregarServicio({ id: 6, name: 'Lavado de Pelo' }, 5000)">Agregar</button>
                                                     </div>
                                                   </div>
                                                 </div>
 
-                                                <div class="col-sm-3">
+                                                <div class="col-sm-3" data-id="7" data-name="Combo" data-price="12000">
                                                     <div class="card text-white bg-dark mb-3">
                                                       <img class="card-img-top" src="img/cortecolor.jpg" alt="mujer en peluquería teniendo el pelo secado después de un lavado">
                                                       <div class="card-body">
                                                         <h3 class="card-title">Corte y Color</h3>
                                                         <h2>$12000</h2>
-                                                        <button id="btnComprar" type="button" class="btn btn-primary" onclick="agregarServicio('Corte+Color', 12000)">Agregar</button>
+                                                        <button id="btnComprar" type="button" class="btn btn-primary" onclick="({ id: 7, name: 'Corte y Color combo' }, 12000)">Agregar</button>
                                                       </div>
                                                     </div>
                                                   </div>
 
-                                                  <div class="col-sm-3">
+                                                  <div class="col-sm-3" data-id="8" data-name="Estilo" data-price="10000">
                                                     <div class="card text-white bg-dark mb-3">
                                                       <img class="card-img-top" src="img/estilo.jpg" alt="mujer en peluquería teniendo el pelo secado después de un lavado">
                                                       <div class="card-body">
                                                         <h3 class="card-title">Estilo</h3>
                                                         <h2>$10000</h2>
-                                                        <button id="btnComprar" type="button" class="btn btn-primary" onclick="agregarServicio('Estilo', 10000)">Agregar</button>
+                                                        <button id="btnComprar" type="button" class="btn btn-primary" onclick="agregarServicio({ id: 8, name: 'Estilo' }, 10000)">Agregar</button>
                                                       </div>
                                                     </div>
                                                   </div>
