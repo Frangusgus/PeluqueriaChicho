@@ -7,38 +7,73 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     
     <title>Peluquería Chicho</title>
 </head>
 <body>
    <header>
-    <h1>Peluquería Chicho</h1>
-    <h3>Tu corte, tu estilo</h3>
+    <h1 class="text-center">Peluquería Chicho</h1>
+    <h3 class="text-center">Tu corte, tu estilo</h3>
     <hr>
     <nav>
-    <div class="botones"> 
-        <a href="index.html"><button>Servicios</button></a>
-        <a href="grid.html"><button>Reseñas</button></a>
-        <a href="reservas.html"><button>Contacto</button></a>
-        <a href="historia.html"><button>Sobre nosotros</button></a>
+    <div class="d-md-flex justify-content-md-center">
+        <div class="button"> 
+        <a href="index.html"><button type="button" class="btn btn-light">Página Principal</button></a>
+        <a href="reseñas.html"><button type="button" class="btn btn-light">Reseñas</button></a>
+        <a href="servicios.html"><button type="button" class="btn btn-light">Servicios</button></a>
+        <a href="historia.html"><button type="button" class="btn btn-light">Sobre nosotros</button></a>
+        </div>
     </div>
     </nav>
+    <hr>
    </header>
    <main>  
 
     <div><h2>Algunos de nuestros servicios:</h2></div>
 
-    <div class="container">
-    <div class="box1"> 
-    <div id="texto1"> <h3>Corte de pelo</h3></div>
-    <div><img src="img/corte.jpg" alt="Corte de Pelo servicio"></div>
-    </div>
-    <div class="box2"> <div id="texto2"> <h3>Corte de Barba</h3></div>
-    <div><img src="img/barba.jpg" alt="Servicio Barba"></div></div>
-    <div class="box3"> <div id="texto3"><h3>Estilo</h3></div>
-    <div><img src="img/girlhaircut.jpeg" alt="Servicio Estilista"></div></div>
-    </div>
+    <div class="container-sm"> 
+        <div class="row">
+            <div class="col-sm-6">
+              <div class="card text-white bg-dark mb-3">
+                <img class="card-img-top" src="img/corte.jpg" alt="Servicio de Corte de Pelo, peluquero atendiendo hombre">
+                <div class="card-body">
+                  <h3 class="card-title">Corte de pelo</h3>
+                  <p class="card-text">Realizamos el corte de pelo que más gustes</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card text-white bg-dark mb-3">
+                    <img class="card-img-top" src="img/barba.jpg" alt="Servicio de Corte de Barba, peluquero atendiendo hombre">
+                  <div class="card-body">
+                    <h3 class="card-title">Corte de Barba</h3>
+                    <p class="card-text">Emprolijamos y llevamos al próximo nivel tu barba</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="card text-white bg-dark mb-3">
+                    <img class="card-img-top" src="img/lavado.jpg" alt="Servicio Estilista, mujer siendo atendida por peluquero">
+                  <div class="card-body">
+                    <h3 class="card-title">Estilo</h3>
+                    <p class="card-text">Te proveemos del estilo que más te represente</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-sm-6">
+                <div class="card text-white bg-dark mb-3">
+                    <img class="card-img-top" src="img/cejas.jpg" alt="Cejas siendo perfiladas">
+                  <div class="card-body">
+                    <h3 class="card-title">Perfilado de Cejas</h3>
+                    <p class="card-text">Dejamos tus cejas de la mejor forma posible</p>
+                  </div>
+                </div>
+              </div>
+
 
     <br>
 
@@ -49,10 +84,13 @@
     </source>
     </video>
     </main>
+    <hr>
    <footer> 
-    <p>Av Salvador María del Carril 2355 - Villa Pueyrredón, Ciudad Autónoma de Buenos Aires<br>
+    <p class="text-center">Av Salvador María del Carril 2355 - Villa Pueyrredón, Ciudad Autónoma de Buenos Aires<br>
     Martes a Domingos 8.30 a 19 hs</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.685913574699!2d-58.492209800000005!3d-34.5868131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb646d7e5b57b%3A0x1f16820dbbe0cb04!2sAv.%20Salvador%20Mar%C3%ADa%20del%20Carril%202355%2C%20C1419%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1730076440831!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <div class="iconos"><i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-square-facebook"></i> </div></footer>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.685913574699!2d-58.492209800000005!3d-34.5868131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb646d7e5b57b%3A0x1f16820dbbe0cb04!2sAv.%20Salvador%20Mar%C3%ADa%20del%20Carril%202355%2C%20C1419%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1730076440831!5m2!1sen!2sar" width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="icons"><i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-square-facebook"></i> </div></footer>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
