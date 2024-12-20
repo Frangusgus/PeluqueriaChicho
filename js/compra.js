@@ -7,7 +7,7 @@ let resumenTexto = "Resumen de la compra:<br><br>";
 
 for (let i = 0; i < servicios.length; i++) {
     const servicio = servicios[i];
-    resumenTexto += `${servicio.nombre}: $${servicio.precio}<br>`;
+    resumenTexto += `${servicio.name}: $${servicio.precio}<br>`;
 }
 
 resumenTexto += `<br>Total a pagar: $${total}`;
